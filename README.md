@@ -19,28 +19,25 @@ This section provides basic knowledge for webpage crawler.  There are several me
 ### POST
 First we need to import some packages
 
-```
-import urllib
-import urllib2 
-```	
+
+	import urllib
+	import urllib2 
+	
 
 Most websites are dynamic pages needing input information when we visit them. We use **Retuest** before getting response of the website. **Request** gets parameters, like url, data, and others. Url is the address, and data is the information for visiting the website. However, the parameters will not be shown in the link.
 
+	values=
+	{"username":"1016903103@qq.com","password":"XXXX"}  
 
+	data = urllib.urlencode(values)  
 
-```
-values = {"username":"1016903103@qq.com","password":"XXXX"}  
+	url = "https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn"  
 
-data = urllib.urlencode(values)  
-
-url = "https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn"  
-
-request = urllib2.Request(url,data)
+	request = urllib2.Request(url,data)
   
-response = urllib2.urlopen(request)
+	response = urllib2.urlopen(request)
   
-print response.read()
-```
+	print response.read()
 	
 The website [CSDN](https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn) is Chinese blog website for writing technology, especially programming staff.
 
@@ -264,26 +261,27 @@ Before we match a pattern, we need to get the pattern. This is what `compile` do
   
 Below are all the match methods. We will introduce one by one.
 
-```python
-
-re.match(pattern, string[, flags])  
-re.search(pattern, string[, flags])  
-re.split(pattern, string[, maxsplit])  
-re.findall(pattern, string[, flags])
-re.finditer(pattern, string[, flags])
-re.sub(pattern, repl, string[, count])
-re.subn(pattern, repl, string[, count])
-```
+	re.match(pattern, string[, flags])  
+	re.search(pattern, string[, flags])  
+	re.split(pattern, string[, maxsplit])  
+	re.findall(pattern, string[, flags])
+	re.finditer(pattern, string[, flags])
+	re.sub(pattern, repl, string[, count])
+	re.subn(pattern, repl, string[, count])
 
 flags is match pattern. We can use '|' to include several pattern case, e.g.`re.I|re.M`
 
+	* re.I(IGNORECASE): case-insensitive（in bracket is the full spelling;
+	* re.M(MULTILINE): multiple line mode. This will change the behaviour of `^` and `$`;
+	* re.S(DOTALL): dot arbitrarily match pattern. This will change the effect of `.`;
+	* re.L(LOCALE): \w \W \b \B \s \S will be determined by current area setting;
+	* re.U(UNICODE): \w \W \b \B \s \S \d \D are determined by the character attributes of unicode;
+	* re.X(VERBOSE): detail mode. Regular expressions can be multiple lines ignoring spaces and can including comments under this mode.	
 
-```markdown
+#### 2. re.match
 
-* re.I(IGNORECASE): case-insensitive（in bracket is the full spelling;
-* re.M(MULTILINE): multiple line mode. This will change the behaviour of `^` and `$`;
-* re.S(DOTALL): dot arbitrarily match pattern. This will change the effect of `.`;
-* re.L(LOCALE): \w \W \b \B \s \S will be determined by current area setting;
-* re.U(UNICODE): \w \W \b \B \s \S \d \D are determined by the character attributes of unicode;
-* re.X(VERBOSE): detail mode. Regular expressions can be multiple lines ignoring spaces and can including comments under this mode.	
+
+
+
+
 ```
