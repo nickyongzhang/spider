@@ -26,11 +26,6 @@ import urllib2
 
 Most websites are dynamic pages needing input information when we visit them. We use **Retuest** before getting response of the website. **Request** gets parameters, like url, data, and others. Url is the address, and data is the information for visiting the website. However, the parameters will not be shown in the link.
 
-<<<<<<< HEAD
-=======
-```python
-	values = {"username":"1016903103@qq.com","password":"XXXX"}  
->>>>>>> 2a5ab98765b80f61f5379737932310791db7908f
 
 
 ```
@@ -44,21 +39,14 @@ request = urllib2.Request(url,data)
   
 response = urllib2.urlopen(request)
   
-<<<<<<< HEAD
 print response.read()
 ```
 	
-=======
-	print response.read()
-```
-
->>>>>>> 2a5ab98765b80f61f5379737932310791db7908f
 The website [CSDN](https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn) is Chinese blog website for writing technology, especially programming staff.
 
 ### GET
 The url should contain all the parameters when using **GET**. The account and password information we submit will be shown. This is not very safe.
 
-```python
 	# The dictionary method is the same as the above code
 	values={}
 	values['username'] = "1016903103@qq.com"
@@ -72,8 +60,7 @@ The url should contain all the parameters when using **GET**. The account and pa
 	request = urllib2.Request(geturl)
 	response = urllib2.urlopen(request)
 	print response.read()
-```
-
+ 
 ### Headers
 Sometimes the website will refuse the visit from application (python in our case). Then we need use **Headers** to cheat the website that we are visiting through explorer. Opening the web inspecter, we can find the headers containing a lot of information, in which the *user-agent* stands for the identity of visit. We will construct a headers and pass it to **Requst**. Then the server will identify the visiting request is from explorer. There is one more thing called *referer* in the headers which is used to prevent hotlink. Some servers will refuse to respond if finding that the referer is not itself. We can also define the *referer* in the headers just like *user-agent*.
 
