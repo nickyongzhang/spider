@@ -254,7 +254,6 @@ Before we match a pattern, we need to get the pattern. This is what `compile` do
 Below are all the match methods. We will introduce one by one.
 
 ```python
-
 re.match(pattern, string[, flags])  
 re.search(pattern, string[, flags])  
 re.split(pattern, string[, maxsplit])  
@@ -267,12 +266,10 @@ re.subn(pattern, repl, string[, count])
 flags is match pattern. We can use '|' to include several pattern case, e.g.`re.I|re.M`
 
 ```markdown
-
 * re.I(IGNORECASE): case-insensitive（in bracket is the full spelling;
 * re.M(MULTILINE): multiple line mode. This will change the behaviour of `^` and `$`;
 * re.S(DOTALL): dot arbitrarily match pattern. This will change the effect of `.`;
 * re.L(LOCALE): \w \W \b \B \s \S will be determined by current area setting;
 * re.U(UNICODE): \w \W \b \B \s \S \d \D are determined by the character attributes of unicode;
-* re.X(VERBOSE): detail mode. Regular expressions can be multiple lines ignoring spaces and can including comments under this mode.
-	
+* re.X(VERBOSE): detail mode. Regular expressions can be multiple lines ignoring spaces and can including comments under this mode.	
 ```
