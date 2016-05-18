@@ -22,7 +22,6 @@ response = urllib2.urlopen(request)
 print response.read()
 
 #use GET
-
 values={}
 values['username'] = "1016903103@qq.com"
 values['password']="XXXX"
@@ -158,9 +157,9 @@ gradeUrl = 'http://jwxt.sdu.edu.cn:7890/pls/wwwbks/bkscjcx.curscopre'
 result = opener.open(gradeUrl)
 print result.read()
 
-###----------------------------------------------------------------------
-######正则表达式
-#re 主要用到的方法
+##----------------------------------------------------------------------
+#####正则表达式
+re 主要用到的方法
 import re
 #返回pattern对象
 re.compile(string[,flag])  
