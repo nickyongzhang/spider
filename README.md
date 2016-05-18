@@ -14,9 +14,12 @@ This section provides basic knowledge for webpage crawler.  There are several me
 ### POST
 First we need to import some packages
 
-	import urllib
-	import urllib2
-	
+```python
+
+import urllib
+import urllib2 
+```	
+
 Most websites are dynamic pages needing input information when we visit them. We use **Retuest** before getting response of the website. **Request** gets parameters, like url, data, and others. Url is the address, and data is the information for visiting the website. However, the parameters will not be shown in the link.
 
 	values = {"username":"1016903103@qq.com","password":"XXXX"}  
@@ -51,7 +54,7 @@ The url should contain all the parameters when using **GET**. The account and pa
 	print response.read()
  
 ### Headers
-Sometimes the website will refuse the visit from application (python in our case). Then we need use **Headers ** to cheat the website that we are visiting through explorer. Opening the web inspecter, we can find the headers containing a lot of information, in which the *user-agent* stands for the identity of visit. We will construct a headers and pass it to **Requst**. Then the server will identify the visiting request is from explorer. There is one more thing called *referer* in the headers which is used to prevent hotlink. Some servers will refuse to respond if finding that the referer is not itself. We can also define the *referer* in the headers just like *user-agent*.
+Sometimes the website will refuse the visit from application (python in our case). Then we need use **Headers** to cheat the website that we are visiting through explorer. Opening the web inspecter, we can find the headers containing a lot of information, in which the *user-agent* stands for the identity of visit. We will construct a headers and pass it to **Requst**. Then the server will identify the visiting request is from explorer. There is one more thing called *referer* in the headers which is used to prevent hotlink. Some servers will refuse to respond if finding that the referer is not itself. We can also define the *referer* in the headers just like *user-agent*.
 
 	url = 'http://www.zhihu.com/login'
 	
@@ -254,6 +257,7 @@ Before we match a pattern, we need to get the pattern. This is what `compile` do
 Below are all the match methods. We will introduce one by one.
 
 ```python
+
 re.match(pattern, string[, flags])  
 re.search(pattern, string[, flags])  
 re.split(pattern, string[, maxsplit])  
@@ -265,7 +269,9 @@ re.subn(pattern, repl, string[, count])
 
 flags is match pattern. We can use '|' to include several pattern case, e.g.`re.I|re.M`
 
+
 ```markdown
+
 * re.I(IGNORECASE): case-insensitive（in bracket is the full spelling;
 * re.M(MULTILINE): multiple line mode. This will change the behaviour of `^` and `$`;
 * re.S(DOTALL): dot arbitrarily match pattern. This will change the effect of `.`;
