@@ -41,6 +41,7 @@ The website [CSDN](https://passport.csdn.net/account/login?from=http://my.csdn.n
 ### GET
 The url should contain all the parameters when using **GET**. The account and password information we submit will be shown. This is not very safe.
 
+```python
 	# The dictionary method is the same as the above code
 	values={}
 	values['username'] = "1016903103@qq.com"
@@ -54,7 +55,8 @@ The url should contain all the parameters when using **GET**. The account and pa
 	request = urllib2.Request(geturl)
 	response = urllib2.urlopen(request)
 	print response.read()
- 
+```
+
 ### Headers
 Sometimes the website will refuse the visit from application (python in our case). Then we need use **Headers** to cheat the website that we are visiting through explorer. Opening the web inspecter, we can find the headers containing a lot of information, in which the *user-agent* stands for the identity of visit. We will construct a headers and pass it to **Requst**. Then the server will identify the visiting request is from explorer. There is one more thing called *referer* in the headers which is used to prevent hotlink. Some servers will refuse to respond if finding that the referer is not itself. We can also define the *referer* in the headers just like *user-agent*.
 
