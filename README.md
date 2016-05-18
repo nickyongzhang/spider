@@ -22,6 +22,7 @@ import urllib2
 
 Most websites are dynamic pages needing input information when we visit them. We use **Retuest** before getting response of the website. **Request** gets parameters, like url, data, and others. Url is the address, and data is the information for visiting the website. However, the parameters will not be shown in the link.
 
+```python
 	values = {"username":"1016903103@qq.com","password":"XXXX"}  
 
 	data = urllib.urlencode(values)  
@@ -33,7 +34,8 @@ Most websites are dynamic pages needing input information when we visit them. We
 	response = urllib2.urlopen(request)
   
 	print response.read()
-	
+```
+
 The website [CSDN](https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn) is Chinese blog website for writing technology, especially programming staff.
 
 ### GET
