@@ -1,3 +1,8 @@
+<link rel="stylesheet" href="/Users/zhangyong/Downloads/highlight/styles/default.css">
+<script src="/Users/zhangyong/Downloads/highlight/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
 # spider
 
 ## Overview
@@ -14,25 +19,28 @@ This section provides basic knowledge for webpage crawler.  There are several me
 ### POST
 First we need to import some packages
 
-```python
-
+```
 import urllib
 import urllib2 
 ```	
 
 Most websites are dynamic pages needing input information when we visit them. We use **Retuest** before getting response of the website. **Request** gets parameters, like url, data, and others. Url is the address, and data is the information for visiting the website. However, the parameters will not be shown in the link.
 
-	values = {"username":"1016903103@qq.com","password":"XXXX"}  
 
-	data = urllib.urlencode(values)  
 
-	url = "https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn"  
+```
+values = {"username":"1016903103@qq.com","password":"XXXX"}  
 
-	request = urllib2.Request(url,data)
+data = urllib.urlencode(values)  
+
+url = "https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn"  
+
+request = urllib2.Request(url,data)
   
-	response = urllib2.urlopen(request)
+response = urllib2.urlopen(request)
   
-	print response.read()
+print response.read()
+```
 	
 The website [CSDN](https://passport.csdn.net/account/login?from=http://my.csdn.net/my/mycsdn) is Chinese blog website for writing technology, especially programming staff.
 
