@@ -3,10 +3,15 @@
 <script>hljs.initHighlightingOnLoad();</script>
 
 
-# spider
+# Basic
+This section contain the following contents:
+
+#### - [Basics](https://github.com/nickzylove/spider/blob/master/basic.md#basics)
+#### - [Regular Expressions](https://github.com/nickzylove/spider/blob/master/basic.md#regular-expressions)
+#### - [BeautifulSoup](https://github.com/nickzylove/spider/blob/master/basic.md#beautifulsoup)
+#### - [CCS](https://github.com/nickzylove/spider/blob/master/basic.md#ccs)
 
 ## Basics
-
 
 This section provides basic knowledge for webpage crawler.  There are several methods to login in a website and get the content from a website, like **POST**, **GET**, **Headers**, and **Proxy**. 
 
