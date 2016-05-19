@@ -679,7 +679,7 @@ soup.find_all(text=["Tillie", "Elsie", "Lacie"])
 # [u'Elsie', u'Lacie', u'Tillie']
 
 soup.find_all(text=re.compile("Dormouse"))
-[u"The Dormouse's story", u"The Dormouse's story"]
+# [u"The Dormouse's story", u"The Dormouse's story"]
 
 
 ### 4）limit 参数
@@ -718,7 +718,7 @@ soup.html.find_all("title", recursive=False)
 # 这2个方法通过 .previous_siblings 属性对当前 tag 的前面解析的兄弟 tag 节点进行迭代, find_previous_siblings() 方法返回所有符合条件的前面的兄弟节点, find_previous_sibling() 方法返回第一个符合条件的前面的兄弟节点
 
 
-### 6.find_all_next() find_next()
+### 
 # 这2个方法通过 .next_elements 属性对当前 tag 的之后的 tag 和字符串进行迭代, find_all_next() 方法返回所有符合条件的节点, find_next() 方法返回第一个符合条件的节点
 
 
