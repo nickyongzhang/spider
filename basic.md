@@ -13,7 +13,9 @@ This section contain the following contents:
 
 ## Basics
 
-This section provides basic knowledge for webpage crawler.  There are several methods to login in a website and get the content from a website, like **POST**, **GET**, **Headers**, and **Proxy**. 
+This section provides basic knowledge for webpage crawler. The contents are also included in the **basic_spider.py** in th folder basic. The .py file can not be run. 
+
+There are several methods to login in a website and get the content from a website, like **POST**, **GET**, **Headers**, and **Proxy**. 
 
 ### POST
 First we need to import some packages
@@ -211,7 +213,7 @@ Below is an example of logging in a website
 	#请求访问成绩查询网址
 	result = opener.open(gradeUrl)
 	print result.read()
-The code can also be found in the file `CookieLogin.py`	
+The code can also be found in the file **basic/CookieLogin.py**	
 *********************************************************
 
 ## Regular Expressions
@@ -1055,13 +1057,9 @@ Output
 	[<a class="sister" href="http://example.com/elsie" id="link1"><!-- Elsie --></a>]
 	[<a class="sister" href="http://example.com/elsie" id="link1"><!-- Elsie --></a>]
 
+******************************************************
 
-
-
-
-
-
-
+We also give some examples in this section. You can find them in the basic folders.
 
 
 
