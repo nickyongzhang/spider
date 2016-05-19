@@ -5,12 +5,6 @@
 
 # spider
 
-## Overview
-
-This is my learning notes when studying spidering website content. Thanks to [Jikexueyuan](http://www.jikexueyuan.com/path/python/). It is a very good website for programming language learning.
-
-This serie contains both basic and advanced knowledge of spider technology.
-
 ## Basics
 
 
