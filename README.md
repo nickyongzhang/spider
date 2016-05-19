@@ -11,4 +11,6 @@ This is my learning notes when studying spidering website content. Thanks to [Ji
 
 This serie contains both basic and advanced knowledge of spider technology.
 
-## Basics
+It is classified into several sections
+### [Basics](https://github.com/nickzylove/spider/blob/basics/basic.md)
+### Xpath
