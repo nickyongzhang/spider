@@ -23,7 +23,6 @@ sys.setdefaultencoding('utf-8')
 
 def getsource(url):
     html = requests.get(url)
-    print html
 
 urls = []
 
@@ -31,12 +30,11 @@ for i in range(1,21):
     newpage = 'http://tieba.baidu.com/p/3522395718?pn=' + str(i)
     urls.append(newpage)
 
-# time1 = time.time()
-# for i in urls:
-#     print i
-#     getsource(i)
-# time2 = time.time()
-# print u'单线程耗时：' + str(time2-time1)
+time1 = time.time()
+for i in urls:
+    getsource(i)
+time2 = time.time()
+print u'单线程耗时：' + str(time2-time1)
 
 pool = ThreadPool(8)
 time3 = time.time()
