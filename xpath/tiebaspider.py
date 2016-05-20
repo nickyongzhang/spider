@@ -32,10 +32,10 @@ def towrite(contentdict):
 def spider(url):
     html = requests.get(url)
     selector = etree.HTML(html.text)
-    content_field = selector.xpath('//div[@class="l_post l_post_bright  "]')
+    content_field = selector.xpath('//div[@class="l_post j_l_post l_post_bright  "]')
     item = {}
-    # print content_field
     for each in content_field:
+        # the data-field is in json format
         reply_info = json.loads(each.xpath('@data-field')[0].replace('&quot',''))
         author = reply_info['author']['user_name']
         content = each.xpath('div[@class="d_post_content_main"]/div/cc/div')[0]
@@ -50,7 +50,7 @@ def spider(url):
         towrite(item)
 
 if __name__ == '__main__':
-    pool = ThreadPool(4)
+    pool = ThreadPool(2)
     f = open('content.txt','a')
     page = []
     for i in range(1,21):
