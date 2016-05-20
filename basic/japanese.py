@@ -7,7 +7,7 @@ Zhang Yong
 
 A basic webpage crawler code
 
-In this code we use Requests instead of urllib2, it's much easier than urllib2
+In this code we use requests instead of urllib2, it's much easier than urllib2
 
 """
 import requests

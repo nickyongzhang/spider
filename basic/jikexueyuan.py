@@ -5,7 +5,7 @@
 Author: 
 Zhang Yong
 
-one practical example
+spider the class information of a website
 
 """
 import requests
@@ -32,6 +32,7 @@ class spider(object):
 
 	def geteveryclass(self, source):
 		everyclass = re.findall('(<li id="\d+".*?</li>)',source,re.S)
+		print everyclass
 		return everyclass
 
 	def getinfo(self,eachclass):
