@@ -132,7 +132,6 @@ class targetweibo(object):
 	def getContent(self,html):
 		selector = etree.HTML(html)
 		link = 'http://weibo.cn'+selector.xpath('//a[@class="nl"]/@href')[4]
-		print link
 		cookie = cookielib.MozillaCookieJar()
 		cookie.load('cookie.txt', ignore_discard=True, ignore_expires=True)
 
