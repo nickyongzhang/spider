@@ -7,8 +7,8 @@
 
 Simulation_login is a technique that a program simulates logging into a website that needs verifying identification. In this section, two methods are introduced:
 
-### [Cookie login](http://github.com/nickzylove/spider/blob/master/basic.md#cookie-login)
-### [Direct Crawling](http://github.com/nickzylove/spider/blob/master/basic.md#direct-crawling)
+### [Cookie login](http://github.com/nickzylove/spider/blob/master/simulation_login.md#cookie-login)
+### [Direct Crawling](http://github.com/nickzylove/spider/blob/master/simulation_login.md#direct-crawling)
 ***
 ## Cookie login
 
