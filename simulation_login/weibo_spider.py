@@ -36,7 +36,7 @@ class mailhelper(object):
 
 		self.mail_host="smtp.gmail.com"  #server
 		self.mail_user="nickzylove"    #user name
-		self.mail_pass="901217zy"   #psw
+		self.mail_pass="xxxx"   #psw
 		self.mail_postfix="gmail.com"  #postfix of send box
 		
 	def send_mail(self,to_list,sub,content):
@@ -96,8 +96,8 @@ class targetweibo(object):
 		captcha_solution= raw_input("Captcha is:")
 		self.new_url = self.url_login + action
 		data = {
-		'mobile':'13732226697',
-		password:'901217zy',
+		'mobile':'xxxx',
+		password:'xxxx',
 		'remember':'on',
 		'backURL': self.url,
 		'backTitle':u'手机新浪网',
@@ -166,7 +166,7 @@ class targetweibo(object):
 
 
 if __name__ == '__main__':
-	mailto_list=['960752103@qq.com']
+	mailto_list=['xxx@xxx.com']
 	helper = targetweibo()
 	source = helper.getSource()
 	data = helper.getData(source)
