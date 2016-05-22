@@ -19,7 +19,7 @@ import sys
 reload(sys)
 sys.setdefaultencoding('utf-8')
 
-cook = 'SUB=_2A256O8xGDeRxGedI6FUX8ibNyTuIHXVZx9QOrDV6PUNbvtBeLWzSkW1LHesubKpX_Xj2pBm7TAqjtxujj8dOsQ..; SUBP=0033WrSXqPxfM725Ws9jqgMF55529P9D9WhpgmdsPKElzg_ZOuOzPgYe5JpX5KMhUgL.Fo2ce0MceonpeoMt; SUHB=0y0oYAvRk0pv7d; SSOLoginState=1463794710; _T_WM=539422377b104059829a5c0f3adbf170;  gsid_CTandWM=4ufUCpOz5cGYiqtztzLjF6S1m23'
+cook = 'xxxxx'
 user_agent = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/44.0.2403.155 Safari/537.36'
 headers = {
     'User-Agent': user_agent,
