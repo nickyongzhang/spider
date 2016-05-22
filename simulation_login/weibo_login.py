@@ -26,7 +26,7 @@ def getImg(page):
         return None
 
 if __name__ == '__main__':
-	url = 'http://weibo.cn/1637628127' #此处请修改为微博地址
+	url = 'http://weibo.cn/xxxx' #此处请修改为微博地址
 	url_login = 'https://login.weibo.cn/login/'
 
 	html = requests.get(url).content
@@ -44,8 +44,8 @@ if __name__ == '__main__':
 	captcha_solution= raw_input("Captcha is:")
 	new_url = url_login + action
 	data = {
-	'mobile':'13732226697',
-	password:'901217zy',
+	'mobile':'xxxx',
+	password:'xxxx',
 	'remember':'on',
 	'backURL': url,
 	'backTitle':u'手机新浪网',
