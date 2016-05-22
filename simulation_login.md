@@ -55,7 +55,11 @@ Sometimes the website may refuse a program visiting and return back a error code
 Finally we get some useful staff. We don't post the html page content here because it takes too much space. Readers can try yourselves and you can find that it is actually a login page. This is where the identification information is needed. 
 
 In this case, we want to directly use cookie to 
-![cookie](https://raw.githubusercontent.com/nickzylove/spider/master/simulation_login/cookie.png =250x100)
+
+<img src="https://raw.githubusercontent.com/nickzylove/spider/master/simulation_login/cookie.png" width = "300" height = "200" alt="图片名称" align=center />
+
+
+![cookie](https://raw.githubusercontent.com/nickzylove/spider/master/simulation_login/cookie.png)
 
 ## Direct Crawling
 
